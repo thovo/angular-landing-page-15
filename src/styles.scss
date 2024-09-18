@@ -2,9 +2,18 @@
 
 html, body {
   height: 100%;
+  font-family: 'Sora', monospace;
 }
 
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+:root {
+  --zinc-800: #27272a;
+  --zinc-500: #71717a;
+  --zinc-300: #d4d4d8;
+  --zinc-200: #e4e4e7;
+  --zinc-100: #f4f4f5;
+  --error: #ef4444;
 }

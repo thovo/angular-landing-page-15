@@ -1,0 +1,45 @@
+header {
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.5rem;
+
+  .container {
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    justify-content: space-between;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--zinc-800);
+    }
+
+    .menu {
+      ul {
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      li {
+        list-style: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--zinc-800);
+
+        a {
+          text-decoration: none;
+          color: var(--zinc-800);
+
+          &:hover {
+            color: var(--zinc-500);
+            border-bottom: 2px solid var(--zinc-500);
+          }
+        }
+      }
+    }
+  }
+}
