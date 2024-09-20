@@ -1,22 +1,36 @@
-import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
-import {AppRoutingModule} from './app-routing.module';
-import {AppComponent} from './app.component';
-import {HeaderModule} from "./components/header/header.module";
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { HeaderModule } from './components/header/header.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeroModule } from './components/hero/hero.module';
+import { SkillsModule } from './components/skills/skills.module';
+import { ExperiencesModule } from './components/experiences/experiences.module';
+import { AboutMeModule } from './components/about-me/about-me.module';
+import { ProjectsModule } from './components/projects/projects.module';
+import { RecommendationsModule } from './components/recommendations/recommendations.module';
+import { ContactModule } from './components/contact/contact.module';
+import { FooterModule } from './components/footer/footer.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HeaderModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HeroModule,
+    SkillsModule,
+    ExperiencesModule,
+    AboutMeModule,
+    ProjectsModule,
+    RecommendationsModule,
+    ContactModule,
+    FooterModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

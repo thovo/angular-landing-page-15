@@ -3,6 +3,7 @@
 html, body {
   height: 100%;
   font-family: 'Sora', monospace;
+  background-color: #fcfff8;
 }
 
 body {
@@ -16,4 +17,10 @@ body {
   --zinc-200: #e4e4e7;
   --zinc-100: #f4f4f5;
   --error: #ef4444;
+}
+
+.container {
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
 }
