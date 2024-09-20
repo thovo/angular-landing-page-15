@@ -7,13 +7,10 @@ header {
   padding: 1rem 0.5rem;
 
   .container {
-    display: flex;
-    max-width: 1440px;
-    width: 100%;
     justify-content: space-between;
 
     h1 {
-      font-size: 2rem;
+      font-size: 3rem;
       font-weight: bold;
       color: var(--zinc-800);
     }
