@@ -1,0 +1,20 @@
+<div class="experience">
+  <header>
+    <h4 class="title">{{ experience.title }}</h4>
+    <span class="company-location">
+      <strong>{{ experience.company }}</strong>
+      - {{ experience.location }}
+    </span>
+    <span class="period">
+      {{ experience.period.start | date: "MMM yyyy" }} -
+      {{ experience.period.end | date: "MMM yyyy" }}
+    </span>
+  </header>
+  <div class="description">
+    <ul class="lines">
+      <li *ngFor="let line of experience.description.lines" class="line">
+        {{ line }}
+      </li>
+    </ul>
+  </div>
+</div>
