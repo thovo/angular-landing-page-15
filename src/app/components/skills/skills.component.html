@@ -1,1 +1,6 @@
-<p>skills works!</p>
+<section class="skills section">
+  <h3 class="section-title">My <strong>Skills</strong></h3>
+  <div class="container">
+    <app-skill *ngFor="let skill of skills" [skill]="skill"></app-skill>
+  </div>
+</section>

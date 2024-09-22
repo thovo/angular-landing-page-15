@@ -13,6 +13,7 @@ import { ProjectsModule } from './components/projects/projects.module';
 import { RecommendationsModule } from './components/recommendations/recommendations.module';
 import { ContactModule } from './components/contact/contact.module';
 import { FooterModule } from './components/footer/footer.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [AppComponent],
@@ -29,6 +30,7 @@ import { FooterModule } from './components/footer/footer.module';
     RecommendationsModule,
     ContactModule,
     FooterModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
