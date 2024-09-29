@@ -1,14 +1,10 @@
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {ProjectsComponent} from "./projects.component";
-
+import { NgModule } from '@angular/core';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
+import { ProjectsComponent } from './projects.component';
 
 @NgModule({
   declarations: [ProjectsComponent],
-  imports: [
-    CommonModule
-  ],
-  exports: [ProjectsComponent]
+  imports: [CommonModule, NgOptimizedImage],
+  exports: [ProjectsComponent],
 })
-export class ProjectsModule {
-}
+export class ProjectsModule {}

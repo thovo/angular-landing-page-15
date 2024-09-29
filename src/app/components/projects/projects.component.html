@@ -1,4 +1,22 @@
 <section class="projects section">
   <h3 class="section-title">My <strong>Projects</strong></h3>
-  <div class="container"></div>
+  <div class="container">
+    <div
+      *ngFor="let project of projects; let i = index"
+      [class.inverse]="i % 2 === 1"
+      class="project"
+    >
+      <img
+        [alt]="project.name"
+        [src]="project.image"
+        height="300"
+        width="300"
+      />
+      <div class="text">
+        <span class="id"># {{ project.id }}</span>
+        <span class="name">{{ project.name }}</span>
+        <span class="description">{{ project.description }}</span>
+      </div>
+    </div>
+  </div>
 </section>
