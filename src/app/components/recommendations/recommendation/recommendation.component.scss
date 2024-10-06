@@ -1,0 +1,35 @@
+.recommendation {
+  border: 2px solid var(--zinc-800);
+  border-radius: 5px;
+  padding: 1rem;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &.odd {
+    background: var(--zinc-800);
+    color: var(--zinc-100);
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .job {
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .quote {
+    font-size: .85rem;
+    font-style: italic;
+    padding: 10px;
+  }
+}
