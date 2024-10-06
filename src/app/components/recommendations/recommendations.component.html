@@ -1,4 +1,10 @@
 <section class="recommendations section">
   <h3 class="section-title">My <strong>Recommendations</strong></h3>
-  <div class="container"></div>
+  <div class="container">
+    <app-recommendation
+      *ngFor="let recommendation of recommendations; index as i"
+      [class]="i % 2 === 1 ? 'odd' : ''"
+      [recommendation]="recommendation"
+    ></app-recommendation>
+  </div>
 </section>

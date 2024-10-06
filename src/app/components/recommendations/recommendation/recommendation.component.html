@@ -1,0 +1,13 @@
+<div class="recommendation {{ class }}">
+  <img [alt]="recommendation.name" [src]="recommendation.imgUrl" />
+  <h4 class="name">{{ recommendation.name }}</h4>
+  <span class="job">
+    <fa-icon [icon]="recommendation.icon" class="icon" size="1x"></fa-icon>
+    {{ recommendation.job }}
+  </span>
+  <span class="quote">
+    <fa-icon [icon]="faQuoteLeft" class="icon" size="1x"></fa-icon>
+    {{ recommendation.quote }}
+    <fa-icon [icon]="faQuoteRight" class="icon" size="1x"></fa-icon>
+  </span>
+</div>
