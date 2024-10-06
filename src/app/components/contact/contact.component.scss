@@ -1,13 +1,13 @@
 .container {
   gap: 2rem;
   justify-content: center;
+  flex-direction: row-reverse;
 }
 
 .form {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 45%;
   min-width: 300px;
   gap: 1rem;
 
@@ -54,7 +54,21 @@
 }
 
 .text {
-  width: 45%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 200px 1fr 300px;
+  gap: 1rem;
+  align-items: center;
+
+  h4 {
+    grid-column: 1/4;
+    text-align: center;
+  }
+
+  img {
+    width: 200px;
+    border-radius: 5px;
+  }
 
   .special {
     font-size: 1.5rem;

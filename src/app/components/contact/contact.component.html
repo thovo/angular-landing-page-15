@@ -1,52 +1,53 @@
 <section class="contact section">
   <h3 class="section-title">Contact <strong>me</strong></h3>
   <div class="container">
-    <form (ngSubmit)="submit()" [formGroup]="form" class="form">
-      <div class="group">
-        <label for="name">Name</label>
-        <input
-          class="form-control"
-          formControlName="name"
-          id="name"
-          name="name"
-          placeholder="Type your name here!"
-          type="text"
-        />
-      </div>
-      <div class="group">
-        <label for="email">Email</label>
-        <input
-          class="form-control"
-          formControlName="email"
-          id="email"
-          name="email"
-          placeholder="Type your email here!"
-          type="email"
-        />
-      </div>
-      <div class="group">
-        <label for="message">Message</label>
-        <textarea
-          class="form-control"
-          formControlName="message"
-          id="message"
-          name="message"
-          placeholder="Type your message here!"
-        ></textarea>
-      </div>
-      <div class="actions">
-        <button type="submit">
-          <fa-icon [icon]="faPaperPlane" class="icon" size="1x"></fa-icon>
-          Send
-        </button>
-        <button type="reset">
-          <fa-icon [icon]="faBroom" class="icon" size="1x"></fa-icon>
-          Reset
-        </button>
-      </div>
-    </form>
     <div class="text">
       <h4 class="special">Have a nice idea, why not ping me a message!</h4>
+      <img alt="Contact me" src="assets/images/contact.jpeg" />
+      <form (ngSubmit)="submit()" [formGroup]="form" class="form">
+        <div class="group">
+          <label for="name">Name</label>
+          <input
+            class="form-control"
+            formControlName="name"
+            id="name"
+            name="name"
+            placeholder="Type your name here!"
+            type="text"
+          />
+        </div>
+        <div class="group">
+          <label for="email">Email</label>
+          <input
+            class="form-control"
+            formControlName="email"
+            id="email"
+            name="email"
+            placeholder="Type your email here!"
+            type="email"
+          />
+        </div>
+        <div class="group">
+          <label for="message">Message</label>
+          <textarea
+            class="form-control"
+            formControlName="message"
+            id="message"
+            name="message"
+            placeholder="Type your message here!"
+          ></textarea>
+        </div>
+        <div class="actions">
+          <button type="submit">
+            <fa-icon [icon]="faPaperPlane" class="icon" size="1x"></fa-icon>
+            Send
+          </button>
+          <button type="reset">
+            <fa-icon [icon]="faBroom" class="icon" size="1x"></fa-icon>
+            Reset
+          </button>
+        </div>
+      </form>
       <div *ngIf="form.valid" class="form-message">
         <span> Hello {{ getName() }} ! </span>
         <span>
