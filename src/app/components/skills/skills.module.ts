@@ -39,4 +39,8 @@ export class SkillsModule {
       faSass,
     );
   }
+
+  static getComponent() {
+    return SkillsComponent;
+  }
 }
