@@ -14,9 +14,10 @@ import { RecommendationsModule } from './components/recommendations/recommendati
 import { ContactModule } from './components/contact/contact.module';
 import { FooterModule } from './components/footer/footer.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LazyLoadDirective } from './directives/lazy-load.directive';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, LazyLoadDirective],
   imports: [
     BrowserModule,
     AppRoutingModule,
